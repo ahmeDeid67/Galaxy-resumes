@@ -98,14 +98,15 @@ menu ul li:hover {
   border-bottom-color: #cd5532;
 }
 
-menu ul li.active {
-  border-bottom-color: #cd5532;
+nav a.active {
+  border-bottom: 4px solid #cd5532;
 }
 
 menu ul li a {
   color: #000;
   font-size: 1.2rem;
   font-family: "Jost", sans-serif;
+  padding-block: 0.5rem;
 }
 
 /* HOME PAGE */
