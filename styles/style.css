@@ -12,4 +12,206 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
+  background-image: linear-gradient(to bottom, rgba(204, 83, 49, 0.8), #fff);
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-inline: auto;
+  background-color: #fff;
+  width: 100%;
+  max-width: 60rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.1),
+    /* Right shadow */ -10px 0 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER */
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  width: 20rem;
+}
+
+header .contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .contact .icon {
+  background-color: #cd5532;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .contact .icon svg {
+  width: 40px;
+}
+
+header .contact p {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: #929292;
+  font-size: 1.5rem;
+}
+
+header .contact a {
+  font-size: 0.9rem;
+}
+
+/* MENU */
+menu ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+menu ul li {
+  padding-block: 0.5rem;
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+menu ul li:hover {
+  border-bottom-color: #cd5532;
+}
+
+menu ul li.active {
+  border-bottom-color: #cd5532;
+}
+
+menu ul li a {
+  color: #000;
+  font-size: 1.2rem;
+  font-family: "Jost", sans-serif;
+}
+
+/* HOME PAGE */
+.showcase .container {
+  background-image: linear-gradient(135deg, #b5321a, #cd5532);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.showcase h1 {
+  font-family: "Jost", sans-serif;
+  color: #fff;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  width: 50%;
+  font-weight: 200;
+}
+
+.showcase h1 > span {
+  font-weight: bold;
+}
+
+.showcase .container img {
+  width: 40%;
+}
+
+.why-galaxy h2 {
+  text-align: center;
+  color: #cd5532;
+  font-size: 2rem;
+  margin-block: 2rem 4rem;
+  font-family: "Jost", sans-serif;
+}
+
+.why-galaxy .features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 1rem;
+}
+
+.why-galaxy .features .feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.why-galaxy .features .feature .check-mark {
+  background-color: #ededed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.why-galaxy .features .feature .check-mark svg {
+  width: 40px;
+}
+
+.why-galaxy .features .feature .check-mark:hover {
+  background-color: #000;
+}
+
+.why-galaxy .features .feature .check-mark:hover svg {
+  color: #fff;
+}
+
+.why-galaxy .features .feature .feature-content {
+  padding-top: 0.5rem;
+}
+
+.why-galaxy .features .feature .feature-content h3 {
+  font-size: 1.2rem;
+  color: #525252;
+  margin-bottom: 0.5rem;
+  font-family: "Jost", sans-serif;
+}
+
+.why-galaxy .features .feature .feature-content p {
+  font-size: 0.8rem;
+  color: #7a7a7a;
+}
+
+/* FOOTER */
+footer .container {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #7a7a7a;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+}
+
+footer ul li:first-child {
+  border-right: 1px solid #7a7a7a;
+  margin-right: 1rem;
+  padding-right: 1rem;
 }
