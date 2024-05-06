@@ -40,7 +40,6 @@ ul {
 }
 
 /* HEADER */
-
 header .container {
   display: flex;
   align-items: center;
@@ -124,7 +123,7 @@ menu ul li a {
   font-size: 3.5rem;
   text-transform: uppercase;
   width: 50%;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .showcase h1 > span {
@@ -191,6 +190,122 @@ menu ul li a {
 
 .why-galaxy .features .feature .feature-content p {
   font-size: 0.8rem;
+  color: #7a7a7a;
+}
+
+/* OTHER SERVICES PAGE */
+.other-services h2 {
+  text-align: center;
+  color: #cd5532;
+  font-size: 2rem;
+  margin-block: 2rem 4rem;
+  font-family: "Jost", sans-serif;
+}
+
+.other-services .services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem 1rem;
+}
+
+.other-services .services .service {
+  text-align: center;
+}
+
+.other-services .services .service img {
+  width: 50px;
+  margin-bottom: 1.5rem;
+}
+
+.other-services .services .service h3 {
+  font-size: 1.3rem;
+  color: #525252;
+}
+
+/* CONTACT US PAGE */
+.contact-us .container {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #929292;
+}
+.contact-us h2 {
+  text-align: center;
+  color: #cd5532;
+  font-size: 2rem;
+  margin-block: 2rem 4rem;
+  font-family: "Jost", sans-serif;
+}
+
+.contact-us .contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem 1rem;
+}
+
+.contact-us .contacts .contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-us .contacts .contact .icon.blue {
+  background-color: #00d0ff;
+}
+
+.contact-us .contacts .contact .icon.green {
+  background-color: #10cb56;
+}
+
+.contact-us .contacts .contact .icon.yellow {
+  background-color: #ffba00;
+}
+
+.contact-us .contacts .contact .icon {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.contact-us .contacts .contact .icon svg {
+  width: 50px;
+}
+
+.contact-us .contacts p.blue {
+  color: #00d0ff;
+}
+
+.contact-us .contacts p.green {
+  color: #10cb56;
+}
+
+.contact-us .contacts p.yellow {
+  color: #ffba00;
+}
+
+.contact-us .contacts .contact-text p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.contact-us .contacts .contact-text a {
+  color: #7a7a7a;
+  font-size: 0.8rem;
+}
+
+.addresses {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.addresses h3 {
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  margin-top: 2rem;
+}
+
+.addresses p {
+  margin-bottom: 0.5rem;
   color: #7a7a7a;
 }
 
