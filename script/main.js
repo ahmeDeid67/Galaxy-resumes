@@ -47,4 +47,8 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-let terms = document.querySelector(".terms");
+let terms = document.getElementById("terms");
+
+terms.addEventListener("click", () => {
+  this.classList.add("");
+});

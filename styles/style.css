@@ -66,8 +66,8 @@ header {
 
 .header .contact .icon {
   background-color: #cd5532;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -76,18 +76,18 @@ header {
 
 .header .contact .icon i {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 .header .contact p {
   font-family: "Jost", sans-serif;
   font-weight: bold;
   color: #929292;
-  font-size: 1rem;
+  font-size: 1.7rem;
 }
 
 .header .contact a {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 /* MENU */
@@ -127,7 +127,7 @@ menu ul li a {
   position: relative;
   height: 241px;
   width: 100%;
-  background-image: url("../assets/unlpng.png");
+  background-image: url("../assets/basketpng.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,12 +138,15 @@ menu ul li a {
 }
 
 .showcase h1 {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
   font-family: "Jost", sans-serif;
   color: #fff;
-  font-size: 3.5rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
   width: 50%;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .showcase h1 > span {
@@ -542,26 +545,29 @@ footer ul li:first-child {
 }
 
 /* Terms and Conditions */
-#myDialog {
-  display: none; /* Initially hide the dialog */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-  z-index: 1000; /* Ensure dialog appears above other content */
+/* .terms {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Style for the dialog close button */
-#myDialog button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+.terms .backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
+
+.terms .content {
+  width: 500px;
+  height: 400px;
+  background-color: #ededed;
+  z-index: 10000;
+  padding: 1rem;
+} */
