@@ -40,23 +40,30 @@ ul {
 }
 
 /* HEADER */
-header .container {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header .logo {
+.header .logo {
   width: 20rem;
 }
 
-header .contact {
+.header .contact {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-header .contact .icon {
+.header .contact .icon {
   background-color: #cd5532;
   width: 60px;
   height: 60px;
@@ -66,18 +73,18 @@ header .contact .icon {
   justify-content: center;
 }
 
-header .contact .icon svg {
+.header .contact .icon svg {
   width: 40px;
 }
 
-header .contact p {
+.header .contact p {
   font-family: "Jost", sans-serif;
   font-weight: bold;
   color: #929292;
   font-size: 1.5rem;
 }
 
-header .contact a {
+.header .contact a {
   font-size: 0.9rem;
 }
 
@@ -110,6 +117,10 @@ menu ul li a {
 }
 
 /* HOME PAGE */
+.showcase {
+  margin-top: 230px;
+}
+
 .showcase .container {
   background-image: linear-gradient(135deg, #b5321a, #cd5532);
   display: flex;
@@ -195,6 +206,10 @@ menu ul li a {
 }
 
 /* SAMPLE PAGE */
+.samples-section {
+  margin-top: 230px;
+}
+
 .samples-section h2 {
   text-align: center;
   color: #cd5532;
@@ -211,6 +226,10 @@ menu ul li a {
 }
 
 /* PRICING PAGE */
+.pricing {
+  margin-top: 230px;
+}
+
 .pricing h2 {
   text-align: center;
   color: #cd5532;
@@ -227,6 +246,10 @@ menu ul li a {
 }
 
 /* OTHER SERVICES PAGE */
+.other-services {
+  margin-top: 230px;
+}
+
 .other-services h2 {
   text-align: center;
   color: #cd5532;
@@ -256,6 +279,10 @@ menu ul li a {
 }
 
 /* CONTACT US PAGE */
+.contact-us {
+  margin-top: 230px;
+}
+
 .contact-us .container {
   padding-bottom: 4rem;
   border-bottom: 1px solid #929292;
