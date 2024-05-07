@@ -74,8 +74,9 @@ header {
   justify-content: center;
 }
 
-.header .contact .icon svg {
-  width: 40px;
+.header .contact .icon i {
+  color: #fff;
+  font-size: 2rem;
 }
 
 .header .contact p {
@@ -169,12 +170,13 @@ menu ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem 1rem;
+  margin-bottom: 2rem;
 }
 
 .why-galaxy .features .feature {
   display: flex;
   align-items: flex-start;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .why-galaxy .features .feature .check-mark {
@@ -183,20 +185,20 @@ menu ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3px;
+  padding: 0.7rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.why-galaxy .features .feature .check-mark svg {
-  width: 40px;
+.why-galaxy .features .feature .check-mark i {
+  font-size: 2rem;
 }
 
 .why-galaxy .features .feature .check-mark:hover {
   background-color: #000;
 }
 
-.why-galaxy .features .feature .check-mark:hover svg {
+.why-galaxy .features .feature .check-mark:hover i {
   color: #fff;
 }
 
@@ -254,9 +256,6 @@ menu ul li a {
   cursor: pointer;
 }
 
-.samples-section .samples .sample {
-}
-
 .samples-section .samples .zoom-in {
   position: absolute;
   top: 0;
@@ -284,8 +283,8 @@ menu ul li a {
   visibility: hidden;
 }
 
-.samples-section .samples svg {
-  width: 30px;
+.samples-section .samples i {
+  font-size: 1.5rem;
 }
 
 .samples-section .samples .sample:hover .zoom-in {
@@ -372,14 +371,16 @@ menu ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem 1rem;
+  padding-bottom: 5rem;
 }
 
 .other-services .services .service {
   text-align: center;
 }
 
-.other-services .services .service img {
-  width: 50px;
+.other-services .services .service i {
+  font-size: 50px;
+  color: #bbb;
   margin-bottom: 1.5rem;
 }
 
@@ -408,7 +409,7 @@ menu ul li a {
 .contact-us .contacts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5rem 1rem;
+  gap: 3rem;
 }
 
 .contact-us .contacts .contact {
@@ -431,14 +432,18 @@ menu ul li a {
 
 .contact-us .contacts .contact .icon {
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: flex;
   text-align: center;
   justify-content: center;
 }
-.contact-us .contacts .contact .icon svg {
-  width: 50px;
+.contact-us .contacts .contact .icon i {
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-us .contacts p.blue {
