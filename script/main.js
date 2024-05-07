@@ -46,3 +46,5 @@ function closeModal() {
   let modal = document.getElementById("myModal");
   modal.style.display = "none";
 }
+
+let terms = document.querySelector(".terms");
