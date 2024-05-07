@@ -1,54 +1,44 @@
-function loadPage(page, link) {
-  fetch(page)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Page not found");
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("main-content").innerHTML = html;
-      setActiveLink(link);
-    })
-    .catch((error) => {
-      console.error("Error loading page:", error);
-    });
-}
+// Add active class to the nav links
+document.addEventListener("DOMContentLoaded", function () {
+  let links = document.querySelectorAll(".nav-link");
+  let currentPage = window.location.pathname.split("/").pop();
 
-// Function to set the active link
-function setActiveLink(clickedLink) {
-  const navLinks = document.querySelectorAll("nav a");
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
+  links.forEach(function (link) {
+    let linkPage = link.getAttribute("href").split("/").pop();
+
+    if (linkPage === currentPage) {
+      link.classList.add("active1");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var menu = document.getElementById("menu");
+  var menuIconOpen = document.getElementById("menu-icon-open");
+  var menuIconClose = document.getElementById("menu-icon-close");
+  var menuContent = document.querySelector(".menu-content");
+  var menuItems = document.querySelector(".menu-items");
+
+  menuContent.addEventListener("click", function () {
+    menu.classList.toggle("open");
+    toggleMenu();
   });
 
-  clickedLink.classList.add("active");
-}
+  function toggleMenu() {
+    if (menu.classList.contains("open")) {
+      menuItems.style.display = "block";
+    } else {
+      menuItems.style.display = "none";
+    }
+    toggleIcon();
+  }
 
-// Load the default page when the page initially loads
-window.onload = function () {
-  const defaultLink = document.getElementById("homeLink");
-  loadPage("home.html", defaultLink);
-};
-
-// Function to open the modal
-function openModal(imageSrc, title) {
-  let modal = document.getElementById("myModal");
-  let modalImg = document.getElementById("modalImage");
-  let captionText = document.getElementById("caption");
-  modal.style.display = "block";
-  modalImg.src = imageSrc;
-  captionText.innerHTML = title;
-}
-
-// Function to close the modal
-function closeModal() {
-  let modal = document.getElementById("myModal");
-  modal.style.display = "none";
-}
-
-let terms = document.getElementById("terms");
-
-terms.addEventListener("click", () => {
-  this.classList.add("");
+  function toggleIcon() {
+    menuIconOpen.style.display = menu.classList.contains("open")
+      ? "none"
+      : "block";
+    menuIconClose.style.display = menu.classList.contains("open")
+      ? "block"
+      : "none";
+  }
 });

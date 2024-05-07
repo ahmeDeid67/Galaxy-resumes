@@ -15,27 +15,323 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style.css" />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/cropped-logos-32x32.png" />
+
+    <!-- Script -->
+    <script src="script/main.js" defer></script>
+
     <title>Pricing - Affordable Resume Packages in India</title>
   </head>
   <body>
-    <!-- Pricing -->
+    <!-- HEADER -->
+    <header>
+      <section class="header">
+        <div class="container">
+          <div class="logo">
+            <a href="#home">
+              <img src="assets/logo.png" alt="Galaxy Resumes Logo"
+            /></a>
+          </div>
+
+          <div class="menu" id="menu">
+            <div class="menu-content">
+              <i class="fa-solid fa-bars" id="menu-icon-open"></i>
+              <i class="fa-solid fa-xmark" id="menu-icon-close"></i>
+              <p>MENU</p>
+            </div>
+            <menu class="menu-items">
+              <nav>
+                <ul>
+                  <li>
+                    <a class="nav-link" href="./home.html">Home</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="./samples.html">Samples</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="./pricing.html">Pricing</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="./other-services.html"
+                      >Other Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-link" href="./contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </menu>
+          </div>
+
+          <div class="contact">
+            <div class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <p>Talk to Pankaj</p>
+              <a href="tel:+919818749023">+91-9818749023</a>
+            </div>
+          </div>
+
+          <menu class="menu-lg">
+            <nav>
+              <ul>
+                <li>
+                  <a class="nav-link" href="./home.html">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="./samples.html">Samples</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="./pricing.html">Pricing</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="./other-services.html"
+                    >Other Services</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="./contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </menu>
+        </div>
+      </section>
+    </header>
+
+    <!-- PRICING PAGE -->
     <div class="pricing">
       <div class="container">
         <h2>Pricing</h2>
         <p>Select Experience</p>
 
         <select name="experience" id="experience">
-          <option value="">Select Experience</option>
+          <option disabled selected value="">Select Experience</option>
           <option value="fresher">Fresher</option>
           <option value="experienced">Experienced</option>
           <option value="leadership">Leadership</option>
         </select>
 
+        <div class="fresher experience hidden">
+          <h3>Cost of 'Fresher' Resume - Rs. 1600</h3>
+          <h3>Chargeable Add-On Services-:</h3>
+          <form action="">
+            <div>
+              <input type="checkbox" name="price" id="a" data-price="500" />
+              <label for="a">International Format @Rs 500</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="b" data-price="700" />
+              <label for="b">Career Bio @Rs 700</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="c" data-price="1200" />
+              <label for="c">LinkedIn Profile Makeover @Rs 1200</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="d" data-price="200" />
+              <label for="d">Email Body Content @Rs 200</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="e" data-price="750" />
+              <label for="e">Winning Interviews (E Book PDF) @Rs 750</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="f" data-price="1000" />
+              <label for="f">Priority Delivery 48 hrs @Rs 1000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="g" data-price="1200" />
+              <label for="g">Urgent Delivery 24 hrs @Rs 1200</label>
+            </div>
+
+            <div class="total">Total <span>Rs. 1,600.00</span></div>
+          </form>
+        </div>
+
+        <div class="experienced experience hidden">
+          <h3>Cost of 'Experienced' Resume - Rs. 2100</h3>
+          <h3>Chargeable Add-On Services-:</h3>
+          <form action="">
+            <div>
+              <input type="checkbox" name="price" id="a" data-price="1400" />
+              <label for="a">International Format @Rs 1400</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="b" data-price="1000" />
+              <label for="b">Career Bio (1 page) @Rs 1000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="c" data-price="2000" />
+              <label for="c">LinkedIn Profile Makeover @Rs 2000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="d" data-price="200" />
+              <label for="d">Email Body Content @Rs 200</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="e" data-price="1000" />
+              <label for="e">Winning Interviews (E Book PDF) @Rs 1000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="f" data-price="1000" />
+              <label for="f">Priority Delivery 48 hrs @Rs 1000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="g" data-price="1500" />
+              <label for="g">Urgent Delivery 24 hrs @Rs 1500</label>
+            </div>
+
+            <div class="total">Total <span>Rs. 2,100.00</span></div>
+          </form>
+        </div>
+
+        <div class="leadership experience hidden">
+          <h3>Cost of 'Leadership' Resume - Rs. 4100</h3>
+          <h3>Chargeable Add-On Services-:</h3>
+          <form action="">
+            <div>
+              <input type="checkbox" name="price" id="a" data-price="1400" />
+              <label for="a">International Format @Rs.1400</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="b" data-price="1500" />
+              <label for="b">Career Bio (1 page) @Rs.1500</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="c" data-price="4000" />
+              <label for="c">Linkedin Profile Makeover @Rs.4000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="d" data-price="200" />
+              <label for="d">Email Body Content @Rs.200</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="e" data-price="1000" />
+              <label for="e">Winning Interviews (E-Book PDF) @Rs.1000)</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="f" data-price="2000" />
+              <label for="f">Priority Delivery 48hrs @Rs.2000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price" id="g" data-price="2500" />
+              <label for="g">Urgent Delivery 24hrs @Rs.2500</label>
+            </div>
+
+            <div class="total">Total <span>Rs. 4,100.00</span></div>
+          </form>
+        </div>
+
         <img
           src="./assets/resume-concept-man-makes-resume-vector-illustration-flat_186332-1030-transformed.jpeg"
           alt="Image"
+          id="resumeImage"
         />
       </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>Established - 2013 | GalaxyResumes.com</p>
+        <ul>
+          <li>
+            <a href="#" id="terms">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="#" onclick="loadPage('blog.html', this); return false;"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const totalPrice = document.querySelector(".total span");
+
+        // Function to update total price
+        function updateTotalPrice() {
+          let currentTotal = 1600; // Default total price
+
+          // Calculate total price based on checked checkboxes
+          checkboxes.forEach((checkbox) => {
+            if (checkbox.checked) {
+              const price = parseInt(checkbox.getAttribute("data-price"));
+              currentTotal += price;
+            }
+          });
+
+          // Display the total price
+          totalPrice.textContent = `Rs. ${currentTotal.toFixed(2)}`;
+
+          // Store the current total price in local storage
+          localStorage.setItem("totalPrice", currentTotal);
+        }
+
+        // Update total price on page load
+        if (localStorage.getItem("totalPrice")) {
+          totalPrice.textContent = `Rs. ${localStorage.getItem("totalPrice")}`;
+        } else {
+          updateTotalPrice(); // Set default total price
+        }
+
+        checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", function () {
+            // Update total price when a checkbox is changed
+            updateTotalPrice();
+          });
+        });
+
+        // Uncheck all checkboxes when the page loads
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = false;
+        });
+
+        // Reset total price and local storage on page reload
+        window.addEventListener("beforeunload", function () {
+          localStorage.removeItem("totalPrice");
+        });
+
+        const selectElement = document.getElementById("experience");
+        const fresherSection = document.querySelector(".fresher");
+        const experiencedSection = document.querySelector(".experienced");
+        const leadershipSection = document.querySelector(".leadership");
+        const resumeImage = document.getElementById("resumeImage");
+
+        selectElement.addEventListener("change", function () {
+          const selectedOption = this.value;
+
+          // Hide all sections
+          fresherSection.classList.add("hidden");
+          experiencedSection.classList.add("hidden");
+          leadershipSection.classList.add("hidden");
+
+          // Show the selected section based on the selected option
+          if (selectedOption === "fresher") {
+            fresherSection.classList.remove("hidden");
+          } else if (selectedOption === "experienced") {
+            experiencedSection.classList.remove("hidden");
+          } else if (selectedOption === "leadership") {
+            leadershipSection.classList.remove("hidden");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
