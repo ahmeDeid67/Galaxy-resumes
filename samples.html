@@ -28,11 +28,126 @@
         </p>
         <div class="samples">
           <div class="sample">
-            <div class="sample-image"></div>
+            <div class="sample-image">
+              <img
+                src="./assets/Sample-1.jpg"
+                alt="Sample 1"
+                onclick="openModal('./assets/Sample-1.jpg', 'Sample 1')"
+              />
+              <div class="zoom-in">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
             <p>Strategic Resume, Page 1 of 2</p>
+          </div>
+          <div class="sample">
+            <div class="sample-image">
+              <img
+                src="./assets/Sample-2.jpg"
+                alt="Sample 2"
+                onclick="openModal('./assets/Sample-2.jpg', 'Sample 2')"
+              />
+              <div class="zoom-in">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p>Strategic Resume, Page 1 of 2</p>
+          </div>
+          <div class="sample">
+            <div class="sample-image">
+              <img
+                src="./assets/Sample-3.jpg"
+                alt="Sample 3"
+                onclick="openModal('./assets/Sample-3.jpg', 'Sample 3')"
+              />
+              <div class="zoom-in">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p>Strategic Resume, Page 1 of 2</p>
+          </div>
+          <div class="sample">
+            <div class="sample-image">
+              <img
+                src="./assets/li.png"
+                alt="Sample 4"
+                onclick="openModal('./assets/li.png', 'Sample 4')"
+              />
+              <div class="zoom-in">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p>Partial content, Linkedin Profile</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" alt="" />
+      <div id="caption"></div>
+    </div>
   </body>
 </html>
