@@ -45,6 +45,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .header .container {
@@ -498,4 +499,43 @@ footer ul li:first-child {
   border-right: 1px solid #7a7a7a;
   margin-right: 1rem;
   padding-right: 1rem;
+}
+
+/* BLOG */
+.blogs {
+  margin-top: 230px;
+}
+
+.blogs .container > h2 {
+  font-size: 2rem;
+  color: #cd5532;
+  margin-bottom: 1rem;
+  font-family: "Jost", sans-serif;
+}
+
+.blog {
+  margin-bottom: 2rem;
+}
+
+.blog h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  font-family: "Jost", sans-serif;
+}
+
+.blog ol {
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+}
+
+.blog p,
+.blog li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.blog a {
+  color: #b5321a;
+  font-weight: bold;
 }
