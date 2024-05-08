@@ -664,7 +664,7 @@ input[type="checkbox"] {
 
 /* Styling for checked state */
 input[type="checkbox"]:checked {
-  background-color: #00d0ff;
+  background-color: #0b7be6;
   border-color: #929292;
 }
 

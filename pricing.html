@@ -865,10 +865,24 @@
           });
         }
 
+        // Function to reset all checkboxes to unchecked
+        function resetCheckboxes() {
+          sections.forEach((section) => {
+            const checkboxes = section.querySelectorAll(
+              'input[type="checkbox"]'
+            );
+            checkboxes.forEach((checkbox) => {
+              checkbox.checked = false;
+            });
+          });
+        }
+
         // Add event listener to select element
         selectElement.addEventListener("change", function () {
           // Get the selected option
           const selectedOption = this.value;
+          // Reset all checkboxes
+          resetCheckboxes();
           // Show the selected section
           showSelectedSection(selectedOption);
           // Update the total price
