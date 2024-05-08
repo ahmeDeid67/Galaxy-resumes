@@ -13,6 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
   background-color: #fff;
+  position: relative;
 }
 
 img {
@@ -583,6 +584,10 @@ input[type="checkbox"]:checked::after {
   left: 2px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Style for the checkbox label */
 .checkbox-label {
   margin-left: 5px; /* Adjust as needed to create space between the checkbox and label */
@@ -804,8 +809,8 @@ footer ul li:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
+} */
+/*
 .terms .backdrop {
   position: absolute;
   width: 100%;
@@ -820,4 +825,63 @@ footer ul li:first-child {
   background-color: #ededed;
   z-index: 10000;
   padding: 1rem;
+} */
+
+/* Contact */
+.call {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call .contact {
+  cursor: pointer;
+}
+
+.call .contact:first-child {
+  margin-left: 30px;
+}
+
+.call .contact:last-child {
+  margin-right: 30px;
+}
+
+.call .contact:first-child .icon {
+  background-color: #81d742;
+}
+
+.call .contact:last-child .icon {
+  background-color: #25d366;
+}
+
+.call .contact .icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.call .contact .icon i {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* a[aria-label="whatsapp"],
+a[aria-label="phone"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 } */

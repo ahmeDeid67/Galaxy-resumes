@@ -15,9 +15,100 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style.css" />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/cropped-logos-32x32.png" />
+
+    <!-- Script -->
+    <script src="script/main.js" defer></script>
+
     <title>Beyond Resumes: Tailored Career Services at Galaxy Resumes</title>
   </head>
   <body>
+    <!-- HEADER -->
+    <header>
+      <section class="header">
+        <div class="container">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="assets/logo.png" alt="Galaxy Resumes Logo"
+            /></a>
+          </div>
+
+          <div class="menu" id="menu">
+            <div class="menu-content">
+              <i class="fa-solid fa-bars" id="menu-icon-open"></i>
+              <i class="fa-solid fa-xmark" id="menu-icon-close"></i>
+              <p>MENU</p>
+            </div>
+            <menu class="menu-items">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="./samples.html">Samples</a>
+                  </li>
+                  <li>
+                    <a href="./pricing.html">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="./other-services.html">Other Services</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="./contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </menu>
+          </div>
+
+          <div class="contact">
+            <div class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <p>Talk to Pankaj</p>
+              <a href="tel:+919818749023">+91-9818749023</a>
+            </div>
+          </div>
+
+          <menu class="menu-lg">
+            <nav>
+              <ul>
+                <li>
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="./samples.html">Samples</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="./pricing.html">Pricing</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="./other-services.html"
+                    >Other Services</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="./contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </menu>
+        </div>
+      </section>
+    </header>
+
     <!-- OTHER SERVICES -->
     <section class="other-services">
       <div class="container">
@@ -50,5 +141,38 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact -->
+    <div class="call">
+      <div class="contact">
+        <div class="icon">
+          <a href="tel:+919818749023" aria-label="phone"
+            ><i class="fa-solid fa-phone"></i
+          ></a>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="icon green">
+          <a href="whatsapp://send?phone=+9818749023" aria-label="whatsapp"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>Established - 2013 | GalaxyResumes.com</p>
+        <ul>
+          <li>
+            <a href="#" id="terms">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="./blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

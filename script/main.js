@@ -42,3 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
       : "none";
   }
 });
+
+// Terms and conditions
+let termsLink = document.getElementById("terms");
+let termsContent = document.querySelector(".terms");
+
+termsLink.addEventListener("click", () => {
+  termsContent.toggle("close");
+});
