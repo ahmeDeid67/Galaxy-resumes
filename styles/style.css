@@ -49,6 +49,13 @@ header {
   height: 100px;
 }
 
+@media (max-width: 767px) {
+  .header.samples {
+    width: 73%;
+    /* margin-inline: auto; */
+  }
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -386,7 +393,7 @@ header {
 }
 
 .samples-section .samples img {
-  width: 200px; /* Adjust image size as needed */
+  width: 200px;
   height: 250px;
   cursor: pointer;
 }
@@ -435,6 +442,20 @@ header {
   font-size: 0.7rem;
   color: #525252;
   font-weight: bold;
+}
+
+@media (max-width: 530px) {
+  .samples-section {
+    margin-top: 130px;
+  }
+
+  .samples-section .samples {
+    grid-template-columns: 1fr;
+  }
+
+  .samples-section .samples img {
+    width: 100%;
+  }
 }
 
 .modal {
@@ -613,6 +634,8 @@ header {
 
 .experience h3:first-child {
   margin-bottom: 0.5rem;
+  border-bottom: 1px solid #7a7a7a;
+  padding-bottom: 0.5rem;
 }
 
 .experience h3:nth-child(2) {
@@ -625,9 +648,6 @@ header {
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.experience input {
 }
 
 /* Hide the default checkbox */
@@ -645,7 +665,7 @@ input[type="checkbox"] {
 
 /* Styling for checked state */
 input[type="checkbox"]:checked {
-  background-color: #eeeeee;
+  background-color: #00d0ff;
   border-color: #929292;
 }
 
@@ -674,13 +694,31 @@ input[type="checkbox"]:checked::after {
 }
 
 .experience .total {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-top: 2rem;
 }
 
 .experience .total span {
   color: #cd5532;
+}
+
+@media (max-width: 530px) {
+  .pricing {
+    margin-top: 130px;
+  }
+
+  .pricing .container #experience {
+    width: 100%;
+  }
+
+  .experience label {
+    font-size: 0.8rem;
+  }
+
+  .experience .total {
+    font-size: 2rem;
+  }
 }
 
 /* OTHER SERVICES PAGE */
@@ -698,7 +736,7 @@ input[type="checkbox"]:checked::after {
 
 .other-services .services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 5rem 1rem;
   padding-bottom: 5rem;
 }
@@ -716,6 +754,12 @@ input[type="checkbox"]:checked::after {
 .other-services .services .service h3 {
   font-size: 1.3rem;
   color: #525252;
+}
+
+@media (max-width: 530px) {
+  .other-services {
+    margin-top: 130px;
+  }
 }
 
 /* CONTACT US PAGE */
@@ -737,7 +781,7 @@ input[type="checkbox"]:checked::after {
 
 .contact-us .contacts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
 }
 
@@ -813,6 +857,16 @@ input[type="checkbox"]:checked::after {
   color: #7a7a7a;
 }
 
+@media (max-width: 530px) {
+  .contact-us {
+    margin-top: 130px;
+  }
+
+  .addresses p {
+    font-size: 0.5rem;
+  }
+}
+
 /* FOOTER */
 footer .container {
   background-color: #000;
@@ -885,6 +939,24 @@ footer ul li:first-child {
   font-weight: bold;
 }
 
+@media (max-width: 530px) {
+  .blogs {
+    margin-top: 130px;
+  }
+
+  .blogs .container > h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog h2 {
+    font-size: 1.4rem;
+  }
+
+  .blog p,
+  .blog li {
+    font-size: 0.7rem;
+  }
+}
 /* Terms and Conditions */
 .terms {
   display: none;

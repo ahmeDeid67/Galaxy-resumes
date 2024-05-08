@@ -91,7 +91,7 @@
         <p>Select Experience</p>
 
         <select name="experience" id="experience">
-          <option disabled selected value="">Select Experience</option>
+          <option selected value="">Select Experience</option>
           <option value="fresher">Fresher</option>
           <option value="experienced">Experienced</option>
           <option value="leadership">Leadership</option>
@@ -828,75 +828,33 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-        const totalPrice = document.querySelector(".total span");
+        const selectElement = document.getElementById("experience");
+        const sections = document.querySelectorAll(".experience");
 
-        // Function to update total price
-        function updateTotalPrice() {
-          let currentTotal = 1600; // Default total price
-
-          // Calculate total price based on checked checkboxes
-          checkboxes.forEach((checkbox) => {
-            if (checkbox.checked) {
-              const price = parseInt(checkbox.getAttribute("data-price"));
-              currentTotal += price;
+        // Function to hide all sections except the selected one
+        function showSelectedSection(selectedOption) {
+          sections.forEach((section) => {
+            if (section.classList.contains(selectedOption)) {
+              section.classList.remove("hidden");
+            } else {
+              section.classList.add("hidden");
             }
           });
-
-          // Display the total price
-          totalPrice.textContent = `Rs. ${currentTotal.toFixed(2)}`;
-
-          // Store the current total price in local storage
-          localStorage.setItem("totalPrice", currentTotal);
         }
 
-        // Update total price on page load
-        if (localStorage.getItem("totalPrice")) {
-          totalPrice.textContent = `Rs. ${localStorage.getItem("totalPrice")}`;
-        } else {
-          updateTotalPrice(); // Set default total price
-        }
-
-        checkboxes.forEach((checkbox) => {
-          checkbox.addEventListener("change", function () {
-            // Update total price when a checkbox is changed
-            updateTotalPrice();
-          });
-        });
-
-        // Uncheck all checkboxes when the page loads
-        checkboxes.forEach((checkbox) => {
-          checkbox.checked = false;
-        });
-
-        // Reset total price and local storage on page reload
-        window.addEventListener("beforeunload", function () {
-          localStorage.removeItem("totalPrice");
-        });
-
-        const selectElement = document.getElementById("experience");
-        const fresherSection = document.querySelector(".fresher");
-        const experiencedSection = document.querySelector(".experienced");
-        const leadershipSection = document.querySelector(".leadership");
-        const resumeImage = document.getElementById("resumeImage");
-
+        // Add event listener to select element
         selectElement.addEventListener("change", function () {
+          // Get the selected option
           const selectedOption = this.value;
-
-          // Hide all sections
-          fresherSection.classList.add("hidden");
-          experiencedSection.classList.add("hidden");
-          leadershipSection.classList.add("hidden");
-
-          // Show the selected section based on the selected option
-          if (selectedOption === "fresher") {
-            fresherSection.classList.remove("hidden");
-          } else if (selectedOption === "experienced") {
-            experiencedSection.classList.remove("hidden");
-          } else if (selectedOption === "leadership") {
-            leadershipSection.classList.remove("hidden");
-          }
+          // Show the selected section
+          showSelectedSection(selectedOption);
         });
+
+        // Select the first option by default
+        selectElement.selectedIndex = 0;
+        const defaultOption =
+          selectElement.options[selectElement.selectedIndex].value;
+        showSelectedSection(defaultOption);
       });
     </script>
   </body>
