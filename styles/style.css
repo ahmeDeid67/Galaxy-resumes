@@ -702,6 +702,16 @@ input[type="checkbox"]:checked::after {
   color: #cd5532;
 }
 
+.pricing-lower-text {
+  display: none;
+  font-size: 1rem;
+  margin-block: 2rem;
+}
+
+.pricing-lower-text p:first-child {
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 530px) {
   .pricing {
     margin-top: 130px;
@@ -717,6 +727,11 @@ input[type="checkbox"]:checked::after {
 
   .experience .total {
     font-size: 2rem;
+  }
+
+  .pricing-lower-text {
+    font-size: 0.7rem;
+    margin-block: 1rem;
   }
 }
 

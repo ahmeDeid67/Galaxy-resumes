@@ -208,11 +208,21 @@
           </form>
         </div>
 
-        <img
-          src="./assets/resume-concept-man-makes-resume-vector-illustration-flat_186332-1030-transformed.jpeg"
-          alt="Image"
-          id="resumeImage"
-        />
+        <div class="pricing-lower">
+          <img
+            src="./assets/resume-concept-man-makes-resume-vector-illustration-flat_186332-1030-transformed.jpeg"
+            alt="Image"
+            id="resumeImage"
+          />
+          <div class="pricing-lower-text">
+            <p>PayTM / GPay / PhonePe – 9818749023</p>
+            <p>Internet Banking – YES BANK</p>
+            <p>Account No.-: 052285800000685</p>
+            <p>Account Name – GALAXY RESUMES</p>
+            <p>Account Type – CURRENT</p>
+            <p>IFSC Code – YESB0000522</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -832,6 +842,8 @@
         const sections = document.querySelectorAll(".experience");
         const totalPriceSpans = document.querySelectorAll(".total span");
         const originalBorderColor = selectElement.style.borderColor;
+        const resumeImage = document.getElementById("resumeImage");
+        const resumeText = document.querySelector(".pricing-lower-text");
 
         selectElement.addEventListener("click", () => {
           selectElement.style.border = "1px solid #f00";
@@ -896,6 +908,8 @@
           showSelectedSection(selectedOption);
           // Update the total price
           updateTotalPrice();
+          resumeImage.style.display = "none";
+          resumeText.style.display = "block";
         });
 
         // Add event listeners to checkboxes
