@@ -13,40 +13,57 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var menu = document.getElementById("menu");
-  var menuIconOpen = document.getElementById("menu-icon-open");
-  var menuIconClose = document.getElementById("menu-icon-close");
-  var menuContent = document.querySelector(".menu-content");
-  var menuItems = document.querySelector(".menu-items");
+  const menuOpen = document.getElementById("menu-icon-open");
+  const menuClose = document.getElementById("menu-icon-close");
+  const navMenu = document.getElementById("nav-menu");
 
-  menuContent.addEventListener("click", function () {
-    menu.classList.toggle("open");
-    toggleMenu();
+  // Open the menu
+  menuOpen.addEventListener("click", function () {
+    navMenu.style.display = "block";
+    menuOpen.style.display = "none";
+    menuClose.style.display = "inline-block";
   });
 
-  function toggleMenu() {
-    if (menu.classList.contains("open")) {
-      menuItems.style.display = "block";
-    } else {
-      menuItems.style.display = "none";
-    }
-    toggleIcon();
-  }
-
-  function toggleIcon() {
-    menuIconOpen.style.display = menu.classList.contains("open")
-      ? "none"
-      : "block";
-    menuIconClose.style.display = menu.classList.contains("open")
-      ? "block"
-      : "none";
-  }
+  // Close the menu
+  menuClose.addEventListener("click", function () {
+    navMenu.style.display = "none";
+    menuClose.style.display = "none";
+    menuOpen.style.display = "inline-block";
+  });
 });
 
 // Terms and conditions
-let termsLink = document.getElementById("terms");
-let termsContent = document.querySelector(".terms");
+document.addEventListener("DOMContentLoaded", function () {
+  const termsSection = document.getElementById("terms");
+  const closeTerms = document.getElementById("close-terms");
+  const backdrop = document.querySelector(".terms .backdrop");
+  const termsLink = document.querySelector(".terms-link");
 
-termsLink.addEventListener("click", () => {
-  termsContent.toggle("close");
+  // Function to show terms
+  function showTerms() {
+    termsSection.style.display = "block";
+  }
+
+  // Function to hide terms
+  function hideTerms() {
+    termsSection.style.display = "none";
+  }
+
+  // Event listener for clicking on terms link
+  termsLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
+    showTerms();
+  });
+
+  // Event listener for clicking on close icon
+  closeTerms.addEventListener("click", function () {
+    hideTerms();
+  });
+
+  // Event listener for clicking on backdrop
+  backdrop.addEventListener("click", function () {
+    hideTerms();
+  });
+
+  hideTerms();
 });

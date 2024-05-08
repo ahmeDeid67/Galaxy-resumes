@@ -43,35 +43,6 @@
             /></a>
           </div>
 
-          <div class="menu" id="menu">
-            <div class="menu-content">
-              <i class="fa-solid fa-bars" id="menu-icon-open"></i>
-              <i class="fa-solid fa-xmark" id="menu-icon-close"></i>
-              <p>MENU</p>
-            </div>
-            <menu class="menu-items">
-              <nav>
-                <ul>
-                  <li>
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="./samples.html">Samples</a>
-                  </li>
-                  <li>
-                    <a href="./pricing.html">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="./other-services.html">Other Services</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="./contact-us.html">Contact Us</a>
-                  </li>
-                </ul>
-              </nav>
-            </menu>
-          </div>
-
           <div class="contact">
             <div class="icon">
               <i class="fa-solid fa-phone"></i>
@@ -82,8 +53,12 @@
             </div>
           </div>
 
-          <menu class="menu-lg">
-            <nav>
+          <menu class="menu">
+            <div class="menu-oc">
+              <i class="fa-solid fa-bars" id="menu-icon-open"></i>
+              <i class="fa-solid fa-xmark" id="menu-icon-close"></i>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
               <ul>
                 <li>
                   <a class="nav-link" href="./index.html">Home</a>
@@ -200,9 +175,12 @@
     </section>
 
     <!-- Terms and Condition -->
-    <!-- <section class="terms">
+    <section class="terms" id="terms">
       <div class="backdrop"></div>
       <div class="content">
+        <div class="close">
+          <i class="fa-solid fa-xmark" id="close-terms"></i>
+        </div>
         <ol>
           <li><strong> Legal Disclaimer</strong></li>
         </ol>
@@ -771,7 +749,7 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
       </div>
-    </section> -->
+    </section>
 
     <!-- Contact -->
     <div class="call">
@@ -797,7 +775,7 @@
         <p>Established - 2013 | GalaxyResumes.com</p>
         <ul>
           <li>
-            <a href="#" id="terms">Terms and Conditions</a>
+            <a href="#" class="terms-link">Terms and Conditions</a>
           </li>
           <li>
             <a href="./blog.html">Blog</a>
