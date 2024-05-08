@@ -242,7 +242,6 @@
     <div id="myModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
       <img class="modal-content" id="modalImage" alt="" />
-      <div id="caption"></div>
     </div>
 
     <!-- Terms and Condition -->
@@ -863,9 +862,9 @@
         var modal = document.getElementById("myModal");
         var modalImg = document.getElementById("modalImage");
         var captionText = document.getElementById("caption");
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = imageSrc;
-        captionText.innerHTML = title;
+        // captionText.innerHTML = title;
       }
 
       // Function to close the modal
