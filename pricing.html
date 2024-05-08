@@ -830,6 +830,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         const selectElement = document.getElementById("experience");
         const sections = document.querySelectorAll(".experience");
+        const totalPriceSpans = document.querySelectorAll(".total span");
 
         // Function to hide all sections except the selected one
         function showSelectedSection(selectedOption) {
@@ -842,12 +843,47 @@
           });
         }
 
+        // Function to update total price
+        function updateTotalPrice() {
+          let totalPrices = [1600, 2100, 4100]; // Default total prices for each option
+
+          sections.forEach((section, index) => {
+            const checkboxes = section.querySelectorAll(
+              'input[type="checkbox"]:checked'
+            );
+            let currentTotal = totalPrices[index]; // Get the default total price for the section
+
+            checkboxes.forEach((checkbox) => {
+              const price = parseInt(checkbox.getAttribute("data-price"));
+              currentTotal += price;
+            });
+
+            // Display the total price for this section
+            totalPriceSpans[index].textContent = `Rs. ${currentTotal.toFixed(
+              2
+            )}`;
+          });
+        }
+
         // Add event listener to select element
         selectElement.addEventListener("change", function () {
           // Get the selected option
           const selectedOption = this.value;
           // Show the selected section
           showSelectedSection(selectedOption);
+          // Update the total price
+          updateTotalPrice();
+        });
+
+        // Add event listeners to checkboxes
+        sections.forEach((section) => {
+          const checkboxes = section.querySelectorAll('input[type="checkbox"]');
+          checkboxes.forEach((checkbox) => {
+            checkbox.addEventListener("change", function () {
+              // Update the total price when a checkbox is changed
+              updateTotalPrice();
+            });
+          });
         });
 
         // Select the first option by default
@@ -855,6 +891,7 @@
         const defaultOption =
           selectElement.options[selectElement.selectedIndex].value;
         showSelectedSection(defaultOption);
+        updateTotalPrice(); // Update total price on page load
       });
     </script>
   </body>
