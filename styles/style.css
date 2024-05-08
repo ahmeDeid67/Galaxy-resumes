@@ -805,7 +805,7 @@ input[type="checkbox"]:checked::after {
 .contact-us .contacts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .contact-us .contacts .contact {
@@ -827,9 +827,9 @@ input[type="checkbox"]:checked::after {
 }
 
 .contact-us .contacts .contact .icon {
-  border-radius: 50%;
   width: 60px;
   height: 60px;
+  border-radius: 50%;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -840,6 +840,7 @@ input[type="checkbox"]:checked::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .contact-us .contacts p.blue {
