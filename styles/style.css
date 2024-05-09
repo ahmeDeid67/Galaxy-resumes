@@ -472,8 +472,8 @@ header {
 }
 
 .modal-content {
-  width: 70%;
-  height: 50%;
+  width: 40%;
+  height: 70%;
 }
 
 .close {
@@ -500,6 +500,11 @@ header {
 
   .samples-section .samples img {
     width: 100%;
+  }
+
+  .modal-content {
+    width: 70%;
+    height: 50%;
   }
 }
 
