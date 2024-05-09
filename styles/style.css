@@ -36,7 +36,7 @@ ul {
   max-width: 50rem;
   padding: 0.5rem 1rem;
   box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.1),
-    /* Right shadow */ -10px 0 10px -5px rgba(0, 0, 0, 0.1);
+    -10px 0 10px -5px rgba(0, 0, 0, 0.1);
 }
 
 /* HEADER */
@@ -47,12 +47,6 @@ header {
   width: 100%;
   z-index: 100;
   height: 100px;
-}
-
-@media (max-width: 767px) {
-  /* .header.samples {
-    width: 73%;
-  } */
 }
 
 .header .container {
@@ -691,7 +685,7 @@ input[type="checkbox"]:checked {
 /* Styling for the checkmark */
 input[type="checkbox"]:checked::after {
   content: "\2713"; /* Unicode checkmark character */
-  color: #000; /* Set the checkmark color */
+  color: #fff; /* Set the checkmark color */
   font-size: 14px; /* Adjust size as needed */
   position: relative;
   top: -2px;

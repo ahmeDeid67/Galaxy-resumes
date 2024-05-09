@@ -99,7 +99,7 @@
         </select>
 
         <div class="fresher experience hidden">
-          <h3>Cost of 'Fresher' Resume - Rs. 1600</h3>
+          <h3>'Fresher' Resume - Rs. 1600</h3>
           <h3>Chargeable Add-On Services-:</h3>
           <form action="">
             <div>
@@ -136,7 +136,7 @@
         </div>
 
         <div class="experienced experience hidden">
-          <h3>Cost of 'Experienced' Resume - Rs. 2100</h3>
+          <h3>'Experienced' Resume - Rs. 2100</h3>
           <h3>Chargeable Add-On Services-:</h3>
           <form action="">
             <div>
@@ -173,7 +173,7 @@
         </div>
 
         <div class="leadership experience hidden">
-          <h3>Cost of 'Leadership' Resume - Rs. 4100</h3>
+          <h3>'Leadership' Resume - Rs. 4100</h3>
           <h3>Chargeable Add-On Services-:</h3>
           <form action="">
             <div>
@@ -838,6 +838,98 @@
     </footer>
 
     <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const selectElement = document.getElementById("experience");
+      //   const sections = document.querySelectorAll(".experience");
+      //   const totalPriceSpans = document.querySelectorAll(".total span");
+      //   const originalBorderColor = selectElement.style.borderColor;
+      //   const resumeImage = document.getElementById("resumeImage");
+      //   const resumeText = document.querySelector(".pricing-lower-text");
+
+      //   selectElement.addEventListener("click", () => {
+      //     selectElement.style.border = "1px solid #f00";
+      //   });
+
+      //   selectElement.addEventListener("blur", function () {
+      //     this.style.borderColor = originalBorderColor; // Restore original border color
+      //   });
+
+      //   // Function to hide all sections except the selected one
+      //   function showSelectedSection(selectedOption) {
+      //     sections.forEach((section) => {
+      //       if (section.classList.contains(selectedOption)) {
+      //         section.classList.remove("hidden");
+      //       } else {
+      //         section.classList.add("hidden");
+      //       }
+      //     });
+      //   }
+
+      //   // Function to update total price
+      //   function updateTotalPrice() {
+      //     let totalPrices = [1600, 2100, 4100]; // Default total prices for each option
+
+      //     sections.forEach((section, index) => {
+      //       const checkboxes = section.querySelectorAll(
+      //         'input[type="checkbox"]:checked'
+      //       );
+      //       let currentTotal = totalPrices[index]; // Get the default total price for the section
+
+      //       checkboxes.forEach((checkbox) => {
+      //         const price = parseInt(checkbox.getAttribute("data-price"));
+      //         currentTotal += price;
+      //       });
+
+      //       // Display the total price for this section
+      //       totalPriceSpans[index].textContent = `Rs. ${currentTotal}`;
+      //     });
+      //   }
+
+      //   // Function to reset all checkboxes to unchecked
+      //   function resetCheckboxes() {
+      //     sections.forEach((section) => {
+      //       const checkboxes = section.querySelectorAll(
+      //         'input[type="checkbox"]'
+      //       );
+      //       checkboxes.forEach((checkbox) => {
+      //         checkbox.checked = false;
+      //       });
+      //     });
+      //   }
+
+      //   // Add event listener to select element
+      //   selectElement.addEventListener("change", function () {
+      //     // Get the selected option
+      //     const selectedOption = this.value;
+      //     // Reset all checkboxes
+      //     resetCheckboxes();
+      //     // Show the selected section
+      //     showSelectedSection(selectedOption);
+      //     // Update the total price
+      //     updateTotalPrice();
+      //     resumeImage.style.display = "none";
+      //     resumeText.style.display = "block";
+      //   });
+
+      //   // Add event listeners to checkboxes
+      //   sections.forEach((section) => {
+      //     const checkboxes = section.querySelectorAll('input[type="checkbox"]');
+      //     checkboxes.forEach((checkbox) => {
+      //       checkbox.addEventListener("change", function () {
+      //         // Update the total price when a checkbox is changed
+      //         updateTotalPrice();
+      //       });
+      //     });
+      //   });
+
+      //   // Select the first option by default
+      //   selectElement.selectedIndex = 0;
+      //   const defaultOption =
+      //     selectElement.options[selectElement.selectedIndex].value;
+      //   showSelectedSection(defaultOption);
+      //   updateTotalPrice(); // Update total price on page load
+      // });
+
       document.addEventListener("DOMContentLoaded", function () {
         const selectElement = document.getElementById("experience");
         const sections = document.querySelectorAll(".experience");
@@ -907,8 +999,14 @@
           showSelectedSection(selectedOption);
           // Update the total price
           updateTotalPrice();
-          resumeImage.style.display = "none";
-          resumeText.style.display = "block";
+          // Show the image and hide the pricing lower text if not the default option
+          if (selectedOption !== "fresher") {
+            resumeImage.style.display = "block";
+            resumeText.style.display = "none";
+          } else {
+            resumeImage.style.display = "none";
+            resumeText.style.display = "block";
+          }
         });
 
         // Add event listeners to checkboxes
