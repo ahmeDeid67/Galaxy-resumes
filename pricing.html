@@ -938,7 +938,7 @@
         const resumeImage = document.getElementById("resumeImage");
         const resumeText = document.querySelector(".pricing-lower-text");
 
-        selectElement.addEventListener("click", () => {
+        selectElement.addEventListener("change", () => {
           selectElement.style.border = "1px solid #f00";
         });
 
@@ -999,8 +999,8 @@
           showSelectedSection(selectedOption);
           // Update the total price
           updateTotalPrice();
-          // Show the image and hide the pricing lower text if not the default option
-          if (selectedOption !== "fresher") {
+          // Show the image and hide the text if not the default option
+          if (selectedOption === "") {
             resumeImage.style.display = "block";
             resumeText.style.display = "none";
           } else {

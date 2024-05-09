@@ -827,7 +827,7 @@ input[type="checkbox"]:checked::after {
 
 .contact-us .contacts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
 }
 
@@ -879,7 +879,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .contact-us .contacts .contact-text p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -911,6 +911,14 @@ input[type="checkbox"]:checked::after {
 
   .addresses p {
     font-size: 0.5rem;
+  }
+
+  .contact-us .contacts .contact-text p {
+    font-size: 1.2rem;
+  }
+
+  .contact-us .contacts .contact-text a {
+    font-size: 1rem;
   }
 }
 
@@ -1066,6 +1074,7 @@ footer ul li:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
 .call .contact {
