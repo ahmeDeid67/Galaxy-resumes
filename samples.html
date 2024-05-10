@@ -221,6 +221,10 @@
             <div class="dot"></div>
             <div class="dot"></div>
           </div>
+          <div class="arrows">
+            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
         </section>
       </div>
     </section>
@@ -865,9 +869,13 @@
         }
       };
 
+      // slider
       let currentSlide = 0;
       const slides = document.querySelectorAll(".slide");
       const dots = document.querySelectorAll(".dot");
+      const arrows = document.querySelectorAll(
+        ".fa-chevron-left, .fa-chevron-right"
+      );
 
       function showSlide(slideIndex) {
         slides.forEach((slide, index) => {
@@ -884,6 +892,11 @@
 
       function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         showSlide(currentSlide);
       }
 
@@ -919,6 +932,17 @@
         dot.addEventListener("click", () => {
           currentSlide = index;
           showSlide(currentSlide);
+        });
+      });
+
+      // Event listeners for arrow clicks
+      arrows.forEach((arrow, index) => {
+        arrow.addEventListener("click", () => {
+          if (index === 0) {
+            prevSlide();
+          } else {
+            nextSlide();
+          }
         });
       });
     </script>
