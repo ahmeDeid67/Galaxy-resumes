@@ -219,6 +219,7 @@ header {
 .samples-section .samples .sample .sample-image {
   position: relative;
   margin-bottom: 0.7rem;
+  text-align: center;
 }
 
 .samples-section .samples img {
@@ -271,6 +272,7 @@ header {
   font-size: 0.7rem;
   color: #525252;
   font-weight: bold;
+  text-align: center;
 }
 
 .modal {
