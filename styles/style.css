@@ -289,16 +289,16 @@ header {
 }
 
 .modal-content {
-  width: 704px;
-  height: 919px;
+  width: 604px;
+  height: 819px;
 }
 
 .close {
   color: white;
   font-size: 30px;
   position: absolute;
-  top: 15px;
-  right: 25px;
+  top: 60px;
+  right: 250px;
   cursor: pointer;
 }
 
@@ -1096,5 +1096,10 @@ footer ul li:first-child {
     text-align: center;
     align-items: center;
     margin-bottom: 2rem;
+  }
+
+  .close {
+    top: 15px;
+    right: 25px;
   }
 }
