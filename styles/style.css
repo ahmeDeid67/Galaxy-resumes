@@ -287,8 +287,8 @@ header {
 }
 
 .modal-content {
-  width: 40%;
-  height: 70%;
+  width: 704px;
+  height: 919px;
 }
 
 .close {
@@ -899,7 +899,7 @@ footer ul li:first-child {
   }
 
   .modal-content {
-    width: 70%;
+    width: 90%;
     height: 50%;
   }
 
