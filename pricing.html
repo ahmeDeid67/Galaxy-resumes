@@ -851,7 +851,7 @@
         });
 
         selectElement.addEventListener("blur", function () {
-          this.style.borderColor = originalBorderColor; // Restore original border color
+          this.style.borderColor = originalBorderColor;
         });
 
         // Function to hide all sections except the selected one
@@ -867,13 +867,13 @@
 
         // Function to update total price
         function updateTotalPrice() {
-          let totalPrices = [1600, 2100, 4100]; // Default total prices for each option
+          let totalPrices = [1600, 2100, 4100];
 
           sections.forEach((section, index) => {
             const checkboxes = section.querySelectorAll(
               'input[type="checkbox"]:checked'
             );
-            let currentTotal = totalPrices[index]; // Get the default total price for the section
+            let currentTotal = totalPrices[index];
 
             checkboxes.forEach((checkbox) => {
               const price = parseInt(checkbox.getAttribute("data-price"));

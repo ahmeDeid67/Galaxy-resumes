@@ -842,8 +842,6 @@
     </footer>
 
     <script>
-      // scripts.js
-
       // Function to open the modal
       function openModal(imageSrc, title) {
         var modal = document.getElementById("myModal");
@@ -851,7 +849,6 @@
         var captionText = document.getElementById("caption");
         modal.style.display = "flex";
         modalImg.src = imageSrc;
-        // captionText.innerHTML = title;
       }
 
       // Function to close the modal
@@ -866,7 +863,7 @@
 
       function showSlide(slideIndex) {
         slides.forEach((slide, index) => {
-          slide.style.transform = `translateX(-${100 * slideIndex}%)`; // Adjust slide position based on slideIndex
+          slide.style.transform = `translateX(-${100 * slideIndex}%)`;
         });
 
         dots.forEach((dot, index) => {
@@ -892,7 +889,7 @@
 
       // Function to restart the automatic movement
       function startInterval() {
-        clearInterval(intervalId); // Clear any existing interval to avoid multiple intervals
+        clearInterval(intervalId);
         intervalId = setInterval(nextSlide, 2000);
       }
 
