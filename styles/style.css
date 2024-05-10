@@ -252,7 +252,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in-out;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .samples-section .samples i {
@@ -263,9 +263,9 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.samples-section .samples .sample:hover .icon {
+/* .samples-section .samples .sample:hover .icon {
   visibility: visible;
-}
+} */
 
 .samples-section .samples .sample p {
   text-align: center;
