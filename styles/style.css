@@ -59,6 +59,7 @@ header {
 
 .header .logo {
   width: 15rem;
+  height: auto;
 }
 
 .header .contact {
