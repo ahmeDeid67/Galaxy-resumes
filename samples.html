@@ -857,6 +857,14 @@
         modal.style.display = "none";
       }
 
+      // Event listener to close modal when clicked outside content
+      window.onclick = function (event) {
+        var modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
       let currentSlide = 0;
       const slides = document.querySelectorAll(".slide");
       const dots = document.querySelectorAll(".dot");
