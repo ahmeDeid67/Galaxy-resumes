@@ -833,7 +833,7 @@ input[type="checkbox"]:checked::after {
 
 .contact-us .contacts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -892,6 +892,8 @@ input[type="checkbox"]:checked::after {
 .contact-us .contacts .contact-text a {
   color: #7a7a7a;
   font-size: 0.8rem;
+  text-decoration: underline;
+  text-wrap: nowrap;
 }
 
 .addresses {
@@ -920,11 +922,15 @@ input[type="checkbox"]:checked::after {
   }
 
   .contact-us .contacts .contact-text p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .contact-us .contacts .contact-text a {
     font-size: 1rem;
+  }
+
+  .contact-us .contacts {
+    gap: 2rem;
   }
 }
 
