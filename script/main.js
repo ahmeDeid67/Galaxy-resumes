@@ -11,22 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Toggle menu
-  // const menuOpen = document.getElementById("menu-icon-open");
-  // const menuClose = document.getElementById("menu-icon-close");
-  // const navMenu = document.getElementById("nav-menu");
-
-  // menuOpen.addEventListener("click", toggleMenu);
-  // menuClose.addEventListener("click", toggleMenu);
-
-  // function toggleMenu() {
-  //   navMenu.style.display =
-  //     navMenu.style.display === "block" ? "none" : "block";
-  //   menuOpen.style.display =
-  //     menuOpen.style.display === "inline-block" ? "none" : "inline-block";
-  //   menuClose.style.display =
-  //     menuClose.style.display === "none" ? "inline-block" : "none";
-  // }
   // Select all nav links
   const navLinks = document.querySelectorAll(".nav-link");
   const navMenu = document.getElementById("nav-menu");
