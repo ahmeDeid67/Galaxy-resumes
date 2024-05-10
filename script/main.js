@@ -12,20 +12,59 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Toggle menu
+  // const menuOpen = document.getElementById("menu-icon-open");
+  // const menuClose = document.getElementById("menu-icon-close");
+  // const navMenu = document.getElementById("nav-menu");
+
+  // menuOpen.addEventListener("click", toggleMenu);
+  // menuClose.addEventListener("click", toggleMenu);
+
+  // function toggleMenu() {
+  //   navMenu.style.display =
+  //     navMenu.style.display === "block" ? "none" : "block";
+  //   menuOpen.style.display =
+  //     menuOpen.style.display === "inline-block" ? "none" : "inline-block";
+  //   menuClose.style.display =
+  //     menuClose.style.display === "none" ? "inline-block" : "none";
+  // }
+  // Select all nav links
+  const navLinks = document.querySelectorAll(".nav-link");
+  const navMenu = document.getElementById("nav-menu");
   const menuOpen = document.getElementById("menu-icon-open");
   const menuClose = document.getElementById("menu-icon-close");
-  const navMenu = document.getElementById("nav-menu");
 
+  // Add event listener to each nav link
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      // Remove 'active' class from all links
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+      });
+
+      // Add 'active' class to the clicked link
+      this.classList.add("active");
+
+      // Close the menu
+      toggleMenu();
+    });
+
+    // Check if the link is the active link
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
+
+  // Add event listener for menu icon clicks
   menuOpen.addEventListener("click", toggleMenu);
   menuClose.addEventListener("click", toggleMenu);
 
+  // Toggle menu function
   function toggleMenu() {
-    navMenu.style.display =
-      navMenu.style.display === "block" ? "none" : "block";
-    menuOpen.style.display =
-      menuOpen.style.display === "inline-block" ? "none" : "inline-block";
+    const displayStyle = navMenu.style.display === "block" ? "none" : "block";
+    navMenu.style.display = displayStyle;
+    menuOpen.style.display = displayStyle === "none" ? "inline-block" : "none";
     menuClose.style.display =
-      menuClose.style.display === "none" ? "inline-block" : "none";
+      displayStyle === "block" ? "inline-block" : "none";
   }
 
   // Terms and conditions
