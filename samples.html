@@ -104,12 +104,12 @@
             </div>
             <p>Strategic Resume, Page 1 of 2</p>
           </div>
-          <!-- <div class="sample">
+          <div class="sample">
             <div class="sample-image">
               <img src="./assets/g1.png" alt="Sample 2" />
               <div
                 class="zoom-in"
-                onclick="openModal('./assets/Sample-2.jpg', 'Sample 2')"
+                onclick="openModal('./assets/g2.png', 'Sample 2')"
               >
                 <div class="icon">
                   <i class="fa-solid fa-magnifying-glass-plus"></i>
@@ -117,7 +117,7 @@
               </div>
             </div>
             <p>Strategic Resume, Page 1 of 2</p>
-          </div> -->
+          </div>
           <div class="sample">
             <div class="sample-image">
               <img src="./assets/b1.png" alt="Sample 3" />
@@ -880,7 +880,7 @@
       }
 
       // Function to move to the next slide every 2 seconds
-      let intervalId = setInterval(nextSlide, 2000);
+      let intervalId = setInterval(nextSlide, 5000);
 
       // Function to stop the automatic movement
       function stopInterval() {
@@ -890,7 +890,7 @@
       // Function to restart the automatic movement
       function startInterval() {
         clearInterval(intervalId);
-        intervalId = setInterval(nextSlide, 2000);
+        intervalId = setInterval(nextSlide, 5000);
       }
 
       // Call the startInterval() function to begin automatic movement
