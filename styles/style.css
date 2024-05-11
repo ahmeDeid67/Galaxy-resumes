@@ -159,8 +159,8 @@ header {
 .why-galaxy h2 {
   text-align: center;
   color: #cd5532;
-  font-size: 2rem;
-  margin-block: 1rem 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
   font-family: "Jost", sans-serif;
 }
 
@@ -172,7 +172,7 @@ header {
 }
 
 .why-galaxy .features .features-left {
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -225,6 +225,8 @@ header {
 
 .why-galaxy .features .features-right {
   padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .why-galaxy .features .features-right h2 {
@@ -244,7 +246,8 @@ header {
 }
 
 .why-galaxy .features .features-right .upload {
-  background-color: rgba(205, 85, 50, 0.3);
+  /* background-color: rgba(205, 85, 50, 0.3); */
+  border: 1px solid #cd5532;
   padding: 5rem 1rem;
   display: flex;
   align-items: center;
