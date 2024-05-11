@@ -60,7 +60,7 @@ header {
 }
 
 .header .logo {
-  width: 10rem;
+  width: 14rem;
   height: auto;
   margin-top: 0.5rem;
 }
@@ -247,7 +247,6 @@ header {
 }
 
 .why-galaxy .features .features-right .upload {
-  /* background-color: rgba(205, 85, 50, 0.3); */
   border: 1px solid #cd5532;
   padding: 5rem 1rem;
   display: flex;
@@ -443,7 +442,7 @@ header {
 .slide {
   flex: 0 0 auto;
   width: 100%;
-  padding: 2rem 0 1rem 2rem;
+  padding: 2rem 2rem 1rem;
   background-color: #f8f8f8;
   border-radius: 10px;
   border: 2px solid #ccc;
@@ -586,7 +585,6 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* Hide the default checkbox */
 input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
@@ -599,13 +597,11 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* Styling for checked state */
 input[type="checkbox"]:checked {
   background-color: #0b7be6;
   border-color: #929292;
 }
 
-/* Styling for the checkmark */
 input[type="checkbox"]:checked::after {
   content: "\2713";
   color: #fff;
@@ -619,7 +615,6 @@ input[type="checkbox"]:checked::after {
   display: none;
 }
 
-/* Style for the checkbox label */
 .checkbox-label {
   margin-left: 5px;
 }
@@ -840,7 +835,7 @@ footer ul li:first-child {
 
 /* BLOG */
 .blogs {
-  margin-top: 148px;
+  margin-top: 130px;
 }
 
 .blogs .container > h2 {
@@ -1000,27 +995,22 @@ footer ul li:first-child {
   font-weight: bold;
 }
 
-/* Combine media queries for max-width: 530px */
+/* max-width: 530px */
 @media (max-width: 530px) {
   .header .logo {
-    width: 10rem;
+    width: 9rem;
   }
 
-  .header .contact {
+  .header .contact .icons {
     gap: 0.5rem;
   }
 
-  .header .contact .icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .header .contact .icon i {
+  .header .contact .icons i {
     font-size: 1rem;
   }
 
-  .header .contact p {
-    font-size: 1rem;
+  .header .contact .contact-text {
+    font-size: 0.7rem;
   }
 
   .header .contact a {
@@ -1032,7 +1022,7 @@ footer ul li:first-child {
   }
 
   .showcase {
-    margin-top: 135px;
+    margin-top: 125px;
   }
 
   .showcase h1 {
@@ -1052,7 +1042,7 @@ footer ul li:first-child {
   }
 
   .samples-section {
-    margin-top: 130px;
+    margin-top: 125px;
   }
 
   .samples-section .samples {
@@ -1070,7 +1060,7 @@ footer ul li:first-child {
   }
 
   .pricing {
-    margin-top: 130px;
+    margin-top: 125px;
   }
 
   .pricing .container #experience {
@@ -1099,7 +1089,7 @@ footer ul li:first-child {
   }
 
   .other-services {
-    margin-top: 130px;
+    margin-top: 125px;
   }
 
   .other-services .services {
@@ -1115,7 +1105,7 @@ footer ul li:first-child {
   }
 
   .contact-us {
-    margin-top: 130px;
+    margin-top: 125px;
   }
 
   .addresses p {
@@ -1135,7 +1125,7 @@ footer ul li:first-child {
   }
 
   .blogs {
-    margin-top: 130px;
+    margin-top: 125px;
   }
 
   .blogs .container > h2 {
@@ -1186,6 +1176,7 @@ footer ul li:first-child {
   }
 }
 
+/* max-width: 772px */
 @media (max-width: 772px) {
   .menu {
     width: 100%;
@@ -1198,7 +1189,7 @@ footer ul li:first-child {
   .menu .nav-menu {
     display: none;
     position: absolute;
-    top: 134px;
+    top: 125px;
     left: 0;
     background-color: #fff;
     width: 100%;
@@ -1243,11 +1234,10 @@ footer ul li:first-child {
     display: none;
   }
 
-  /* Add style for active link */
   .nav-link {
     padding-bottom: 0.3rem;
   }
-  .nav-link.active {
+  .nav-link.active1 {
     border-bottom: 5px solid #cd5532;
   }
 
@@ -1261,7 +1251,7 @@ footer ul li:first-child {
   }
 }
 
-/* Combine media queries for max-width: 770px */
+/* max-width: 770px */
 @media (max-width: 770px) {
   .why-galaxy .features .feature {
     flex-direction: column;

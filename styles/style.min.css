@@ -14,16 +14,17 @@ img {
   text-align: center;
   font-family: Jost, sans-serif;
 }
-.blog h2,
-.blogs .container > h2,
-.contact-us h2,
 .header .contact p,
-.other-services h2,
 .pricing h2,
 .samples-section h2,
 .showcase h1,
 .why-galaxy h2 {
   font-family: Jost, sans-serif;
+}
+.close,
+.close-terms {
+  right: 535px;
+  cursor: pointer;
 }
 * {
   margin: 0;
@@ -76,8 +77,9 @@ header {
   display: none;
 }
 .header .logo {
-  width: 15rem;
+  width: 14rem;
   height: auto;
+  margin-top: 0.5rem;
 }
 .header .contact .icons {
   display: flex;
@@ -109,6 +111,7 @@ header {
 .header .contact .phone-icon {
   background-color: #cd5532;
 }
+.contact-footer:first-child .icon,
 .header .contact .whats-icon {
   background-color: #2eb841;
 }
@@ -130,8 +133,11 @@ header {
   transition: 0.3s ease-in-out;
   position: relative;
 }
+.contact-us,
+.other-services,
+.pricing,
 .showcase {
-  margin-top: 149px;
+  margin-top: 135px;
 }
 .showcase .container {
   position: relative;
@@ -257,12 +263,8 @@ header {
   font-size: 0.8rem;
   font-weight: 700;
 }
-.blogs,
-.contact-us,
-.other-services,
-.pricing,
 .samples-section {
-  margin-top: 148px;
+  margin-top: 125px;
 }
 .pricing h2,
 .samples-section h2 {
@@ -338,8 +340,6 @@ header {
   font-size: 30px;
   position: absolute;
   top: 60px;
-  right: 535px;
-  cursor: pointer;
 }
 .close:hover {
   color: #bbb;
@@ -381,7 +381,7 @@ header {
 .slide {
   flex: 0 0 auto;
   width: 100%;
-  padding: 2rem 0 1rem 2rem;
+  padding: 2rem 2rem 1rem;
   background-color: #f8f8f8;
   border-radius: 10px;
   border: 2px solid #ccc;
@@ -441,10 +441,9 @@ header {
 }
 .backdrop,
 .terms {
-  top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 .addresses h3,
 .blog h2,
@@ -537,6 +536,13 @@ input[type="checkbox"]:checked::after {
   font-size: 1rem;
   cursor: pointer;
 }
+.blogs .container > h2,
+.contact-us h2,
+.other-services h2 {
+  font-size: 2rem;
+  color: #cd5532;
+  font-family: Jost, sans-serif;
+}
 .experience .total {
   font-size: 3rem;
   font-weight: 700;
@@ -561,8 +567,6 @@ input[type="checkbox"]:checked::after {
 .contact-us h2,
 .other-services h2 {
   text-align: center;
-  color: #cd5532;
-  font-size: 2rem;
   margin-block: 2rem 4rem;
 }
 .other-services .services {
@@ -679,9 +683,10 @@ footer ul li:first-child {
   margin-right: 1rem;
   padding-right: 1rem;
 }
+.blogs {
+  margin-top: 130px;
+}
 .blogs .container > h2 {
-  font-size: 2rem;
-  color: #cd5532;
   margin-bottom: 1rem;
 }
 .blog {
@@ -690,6 +695,7 @@ footer ul li:first-child {
 .blog h2 {
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
+  font-family: Jost, sans-serif;
 }
 .blog ol {
   margin-left: 2.5rem;
@@ -706,6 +712,7 @@ footer ul li:first-child {
 .terms {
   display: none;
   position: fixed;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   display: flex;
@@ -734,69 +741,79 @@ footer ul li:first-child {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
-.terms .close i {
+.close-terms {
+  color: #cd5532;
+  font-size: 30px;
+  top: 60px;
+  text-align: right;
+}
+.close-terms i {
   font-size: 2rem;
   color: #cd5532;
   font-weight: 700;
 }
 .backdrop {
   position: absolute;
+  top: 0;
 }
-.call {
-  position: fixed;
-  bottom: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-.call .contact {
-  cursor: pointer;
-}
-.call .contact:first-child {
-  margin-left: 30px;
-}
-.call .contact:last-child {
-  margin-right: 30px;
-}
-.call .contact:first-child .icon {
-  background-color: #81d742;
-}
-.call .contact:last-child .icon {
-  background-color: #25d366;
-}
-.call .contact .icon {
+.contact-footer,
+.contact-footer .icon {
   width: 60px;
   height: 60px;
   display: flex;
+  border-radius: 50%;
+  color: #fff;
+}
+.contact-footer {
+  position: fixed;
+  bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.contact-footer:first-of-type {
+  left: 30px;
+  background-color: #81d742;
+}
+.contact-footer:last-of-type {
+  right: 30px;
+  background-color: #2eb841;
+}
+.contact-footer:first-child {
+  margin-left: 30px;
+}
+.contact-footer:last-child {
+  margin-right: 30px;
+}
+.contact-footer:last-child .icon {
+  background-color: #25d366;
+}
+.contact-footer .icon {
   align-items: center;
   justify-content: center;
-  color: #fff;
-  border-radius: 50%;
 }
-.call .contact .icon i {
+.contact-footer .icon i {
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 @media (max-width: 530px) {
   .header .logo {
-    width: 12rem;
+    width: 9rem;
   }
-  .header .contact {
+  .header .contact .icons {
     gap: 0.5rem;
   }
-  .header .contact .icon {
-    width: 30px;
-    height: 30px;
-  }
   .contact-us .contacts .contact-text a,
-  .header .contact .icon i,
-  .header .contact p,
+  .header .contact .icons i,
   .other-services .services .service h3,
   .showcase h1 {
     font-size: 1rem;
+  }
+  .blog li,
+  .blog p,
+  .header .contact .contact-text {
+    font-size: 0.7rem;
   }
   .experience label,
   .header .contact a {
@@ -811,7 +828,7 @@ footer ul li:first-child {
   .pricing,
   .samples-section,
   .showcase {
-    margin-top: 130px;
+    margin-top: 125px;
   }
   .blogs .container > h2,
   .why-galaxy h2 {
@@ -868,10 +885,6 @@ footer ul li:first-child {
   .blog h2 {
     font-size: 1.4rem;
   }
-  .blog li,
-  .blog p {
-    font-size: 0.7rem;
-  }
 }
 @media (min-width: 773px) {
   .menu nav {
@@ -912,7 +925,7 @@ footer ul li:first-child {
   .menu .nav-menu {
     display: none;
     position: absolute;
-    top: 134px;
+    top: 125px;
     left: 0;
     background-color: #fff;
     width: 100%;
@@ -951,7 +964,7 @@ footer ul li:first-child {
   .nav-link {
     padding-bottom: 0.3rem;
   }
-  .nav-link.active {
+  .nav-link.active1 {
     border-bottom: 5px solid #cd5532;
   }
   footer .container {
