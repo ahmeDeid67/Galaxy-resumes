@@ -258,6 +258,7 @@ header {
 
 .samples-section .samples i {
   font-size: 1.5rem;
+  color: #000;
 }
 
 .samples-section .samples .sample:hover .zoom-in {
