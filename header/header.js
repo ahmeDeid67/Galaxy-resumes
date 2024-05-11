@@ -4,6 +4,9 @@ fetch("header/header.html")
     document.getElementById("header-placeholder").innerHTML = data;
     // Add event listeners or any other dynamic functionality here
     addHeaderFunctionality();
+  })
+  .catch((error) => {
+    console.error("Error fetching header", error);
   });
 
 function addHeaderFunctionality() {
