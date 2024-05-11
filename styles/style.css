@@ -67,11 +67,21 @@ header {
 .header .contact {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.header .contact .icons {
+  display: flex;
+  align-items: center;
   gap: 0.6rem;
 }
 
 .header .contact-text {
   height: 100%;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 2px;
 }
 
 .header .contact .phone-icon,
@@ -87,7 +97,6 @@ header {
 
 .header .contact .phone-icon {
   background-color: #cd5532;
-  margin-bottom: 0.2rem;
 }
 
 .header .contact .whats-icon {
@@ -105,7 +114,6 @@ header {
   font-weight: bold;
   color: #929292;
   font-size: 1.7rem;
-  margin-bottom: 0.4rem;
 }
 
 .header .contact a {
