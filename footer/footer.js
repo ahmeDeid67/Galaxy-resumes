@@ -19,6 +19,7 @@ function addFooterFunctionality() {
     event.preventDefault();
     showTerms();
   });
+
   closeTerms.addEventListener("click", hideTerms);
   backdrop.addEventListener("click", hideTerms);
   function showTerms() {

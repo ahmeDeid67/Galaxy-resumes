@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       document.getElementById("header-placeholder").innerHTML = data;
       // Add event listeners or any other dynamic functionality here
-      addFooterFunctionality();
+      addHeaderFunctionality();
     });
 });
 
-function addFooterFunctionality() {
+function addHeaderFunctionality() {
   // Add active class to the nav links
   let links = document.querySelectorAll(".nav-link");
   let currentPage = window.location.pathname.split("/").pop();
