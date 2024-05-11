@@ -50,26 +50,4 @@ document.addEventListener("DOMContentLoaded", function () {
     menuClose.style.display =
       displayStyle === "block" ? "inline-block" : "none";
   }
-
-  // Terms and conditions
-  const termsSection = document.getElementById("terms");
-  const closeTerms = document.getElementById("close-terms");
-  const backdrop = document.querySelector(".terms .backdrop");
-  const termsLink = document.querySelector(".terms-link");
-
-  termsLink.addEventListener("click", function (event) {
-    event.preventDefault();
-    showTerms();
-  });
-
-  closeTerms.addEventListener("click", hideTerms);
-  backdrop.addEventListener("click", hideTerms);
-
-  function showTerms() {
-    termsSection.style.display = "block";
-  }
-
-  function hideTerms() {
-    termsSection.style.display = "none";
-  }
 });
