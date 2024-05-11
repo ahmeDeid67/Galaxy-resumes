@@ -519,7 +519,7 @@ input[type="checkbox"]:checked::after {
   left: 2px;
 }
 
-.hidden {
+.experience.hidden {
   display: none;
 }
 

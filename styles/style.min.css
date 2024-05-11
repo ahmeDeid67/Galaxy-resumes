@@ -79,7 +79,7 @@ header {
   align-items: center;
   gap: 1rem;
 }
-.hidden,
+.experience.hidden,
 .menu .menu-oc,
 .menu nav,
 .modal {
@@ -719,13 +719,16 @@ footer ul li:first-child {
   .samples-section .samples {
     grid-template-columns: 1fr;
   }
-  .pricing .container #experience,
   .samples-section .samples img {
     width: 100%;
+    height: 450px;
   }
   .modal-content {
     width: 90%;
-    height: 50%;
+    height: 60%;
+  }
+  .pricing .container #experience {
+    width: 100%;
   }
   .experience .total {
     font-size: 2rem;
