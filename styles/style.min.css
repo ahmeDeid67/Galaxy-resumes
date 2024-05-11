@@ -9,10 +9,10 @@ header,
 img {
   width: 100%;
 }
-.close,
 .showcase h1,
-.why-galaxy .features .feature .check-mark:hover i {
-  color: #fff;
+.why-galaxy h2 {
+  text-align: center;
+  font-family: Jost, sans-serif;
 }
 .blog h2,
 .blogs .container > h2,
@@ -69,34 +69,53 @@ header {
   flex-wrap: wrap;
   position: relative;
 }
-.header .logo {
-  width: 15rem;
-  height: auto;
-}
-.contact-us .contacts .contact,
-.header .contact {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 .experience.hidden,
 .menu .menu-oc,
 .menu nav,
 .modal {
   display: none;
 }
-.header .contact .icon {
-  background-color: #cd5532;
-  width: 50px;
-  height: 50px;
+.header .logo {
+  width: 15rem;
+  height: auto;
+}
+.header .contact .icons {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.header .contact-text {
+  height: 100%;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+.header .contact .phone-icon,
+.header .contact .whats-icon {
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header .contact .icon i {
+.samples-section .samples .sample,
+.why-galaxy .features .features-left,
+.why-galaxy .features .features-right {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.header .contact .phone-icon {
+  background-color: #cd5532;
+}
+.header .contact .whats-icon {
+  background-color: #2eb841;
+}
+.header .contact .phone-icon i,
+.header .contact .whats-icon i {
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 .header .contact p {
   font-weight: 700;
@@ -106,11 +125,6 @@ header {
 .header .contact a {
   font-size: 0.9rem;
   text-decoration: underline;
-}
-.arrows i:hover,
-.samples-section .samples i,
-.showcase h1 {
-  font-size: 1.5rem;
 }
 .menu nav {
   transition: 0.3s ease-in-out;
@@ -141,18 +155,15 @@ header {
   position: absolute;
   bottom: 30px;
   left: 20px;
-  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
   width: 50%;
   font-weight: 700;
 }
-.why-galaxy .features .feature .check-mark i,
 .why-galaxy h2 {
-  font-size: 2rem;
-}
-.why-galaxy h2 {
-  text-align: center;
   color: #cd5532;
-  margin-block: 1rem 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 .why-galaxy .features {
   gap: 1rem;
@@ -164,7 +175,7 @@ header {
   gap: 1rem;
 }
 .why-galaxy .features .feature .check-mark {
-  background-color: #ededed;
+  background-color: #cd5532;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -173,9 +184,16 @@ header {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+.why-galaxy .features .feature .check-mark i {
+  font-size: 2rem;
+  color: #fff;
+}
 .dot.active,
 .why-galaxy .features .feature .check-mark:hover {
   background-color: #000;
+}
+.why-galaxy .features .feature .check-mark:hover i {
+  color: #fff;
 }
 .why-galaxy .features .feature .feature-content {
   padding-top: 0.5rem;
@@ -189,6 +207,55 @@ header {
 .why-galaxy .features .feature .feature-content p {
   font-size: 0.8rem;
   color: #7a7a7a;
+}
+.why-galaxy .features .features-right h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+.why-galaxy .features .features-right h3 {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.why-galaxy .features .features-right p:first-of-type {
+  font-size: 0.8rem;
+  margin-block: 1rem 0.5rem;
+}
+.why-galaxy .features .features-right .upload {
+  border: 1px solid #cd5532;
+  padding: 5rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 0.4rem;
+}
+.why-galaxy .features .features-right .upload-icon {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.why-galaxy .features .features-right .upload-icon i {
+  margin-right: 0.4rem;
+  font-size: 2rem;
+}
+.why-galaxy .features .features-right button {
+  border: none;
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #cd5532;
+  cursor: pointer;
+}
+.why-galaxy .features .features-right .extention {
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 .blogs,
 .contact-us,
@@ -241,6 +308,10 @@ header {
   justify-content: center;
   transition: 0.3s ease-in-out;
 }
+.samples-section .samples i {
+  font-size: 1.5rem;
+  color: #000;
+}
 .samples-section .samples .sample:hover .zoom-in {
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -263,6 +334,7 @@ header {
   height: 819px;
 }
 .close {
+  color: #fff;
   font-size: 30px;
   position: absolute;
   top: 60px;
@@ -299,6 +371,9 @@ header {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+.arrows i:hover {
+  font-size: 1.5rem;
+}
 .slider {
   display: flex;
   transition: transform 0.5s;
@@ -328,6 +403,7 @@ header {
   overflow: hidden;
 }
 .experience .total span,
+.other-services .services .service .price p > span,
 .slide .info h3 {
   color: #cd5532;
 }
@@ -377,7 +453,6 @@ header {
 .experience .total {
   margin-top: 2rem;
 }
-.other-services .services .service,
 .pricing .container {
   text-align: center;
 }
@@ -420,6 +495,10 @@ header {
   margin-bottom: 1.5rem;
   margin-top: 2rem;
   padding-right: 6rem;
+}
+.pricing-lower-text p:first-child,
+.pricing-top {
+  margin-bottom: 1rem;
 }
 .experience div {
   display: flex;
@@ -469,8 +548,15 @@ input[type="checkbox"]:checked::after {
   font-size: 1rem;
   margin-block: 2rem;
 }
-.pricing-lower-text p:first-child {
-  margin-bottom: 1rem;
+.pricing-top {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  justify-content: center;
+}
+.pricing-top img {
+  width: 60px;
+  height: auto;
 }
 .contact-us h2,
 .other-services h2 {
@@ -483,20 +569,41 @@ input[type="checkbox"]:checked::after {
   gap: 5rem 1rem;
   padding-bottom: 5rem;
 }
+.other-services .services .service {
+  text-align: center;
+  padding: 2rem 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+.other-services .services .service:hover {
+  transform: scale(1.1);
+}
 .other-services .services .service i {
   font-size: 50px;
-  color: #bbb;
+  color: #cd5532;
   margin-bottom: 1.5rem;
 }
 .other-services .services .service h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  color: #000;
+}
+.other-services .services .service .price {
   color: #525252;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 .contact-us .container {
   padding-bottom: 4rem;
   border-bottom: 1px solid #929292;
 }
 .contact-us .contacts {
+  gap: 1rem;
+}
+.contact-us .contacts .contact {
+  display: flex;
+  align-items: center;
   gap: 1rem;
 }
 .contact-us .contacts .contact .icon.blue {

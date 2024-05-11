@@ -60,8 +60,9 @@ header {
 }
 
 .header .logo {
-  width: 15rem;
+  width: 10rem;
   height: auto;
+  margin-top: 0.5rem;
 }
 
 .header .contact .icons {
@@ -127,7 +128,7 @@ header {
 
 /* HOME PAGE */
 .showcase {
-  margin-top: 149px;
+  margin-top: 135px;
 }
 
 .showcase .container {
@@ -289,7 +290,7 @@ header {
 
 /* SAMPLES PAGE */
 .samples-section {
-  margin-top: 148px;
+  margin-top: 125px;
 }
 
 .samples-section h2 {
@@ -513,7 +514,7 @@ header {
 
 /* PRICING PAGE */
 .pricing {
-  margin-top: 148px;
+  margin-top: 135px;
 }
 
 .pricing .container {
@@ -665,7 +666,7 @@ input[type="checkbox"]:checked::after {
 
 /* OTHER SERVICES PAGE */
 .other-services {
-  margin-top: 148px;
+  margin-top: 135px;
 }
 
 .other-services h2 {
@@ -719,7 +720,7 @@ input[type="checkbox"]:checked::after {
 
 /* CONTACT US PAGE */
 .contact-us {
-  margin-top: 148px;
+  margin-top: 135px;
 }
 
 .contact-us .container {
@@ -916,7 +917,16 @@ footer ul li:first-child {
   margin-top: 0.5rem;
 }
 
-.terms .close i {
+.close-terms {
+  color: #cd5532;
+  font-size: 30px;
+  top: 60px;
+  right: 535px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.close-terms i {
   font-size: 2rem;
   color: #cd5532;
   font-weight: bold;
@@ -931,37 +941,50 @@ footer ul li:first-child {
 }
 
 /* Contact */
-.call {
+.contact-footer {
   position: fixed;
   bottom: 30px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
-}
-
-.call .contact {
+  color: #fff;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
+  border-radius: 50%;
 }
 
-.call .contact:first-child {
-  margin-left: 30px;
-}
-
-.call .contact:last-child {
-  margin-right: 30px;
-}
-
-.call .contact:first-child .icon {
+.contact-footer:first-of-type {
+  left: 30px;
   background-color: #81d742;
 }
 
-.call .contact:last-child .icon {
+.contact-footer:last-of-type {
+  right: 30px;
+  background-color: #2eb841;
+}
+
+.contact-footer {
+  cursor: pointer;
+}
+
+.contact-footer:first-child {
+  margin-left: 30px;
+}
+
+.contact-footer:last-child {
+  margin-right: 30px;
+}
+
+.contact-footer:first-child .icon {
+  background-color: #2eb841;
+}
+
+.contact-footer:last-child .icon {
   background-color: #25d366;
 }
 
-.call .contact .icon {
+.contact-footer .icon {
   width: 60px;
   height: 60px;
   display: flex;
@@ -971,16 +994,16 @@ footer ul li:first-child {
   border-radius: 50%;
 }
 
-.call .contact .icon i {
+.contact-footer .icon i {
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: bold;
 }
 
 /* Combine media queries for max-width: 530px */
 @media (max-width: 530px) {
   .header .logo {
-    width: 12rem;
+    width: 10rem;
   }
 
   .header .contact {
@@ -1009,7 +1032,7 @@ footer ul li:first-child {
   }
 
   .showcase {
-    margin-top: 130px;
+    margin-top: 135px;
   }
 
   .showcase h1 {
