@@ -1,12 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("header/header.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("header-placeholder").innerHTML = data;
-      // Add event listeners or any other dynamic functionality here
-      addHeaderFunctionality();
-    });
-});
+fetch("header/header.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("header-placeholder").innerHTML = data;
+    // Add event listeners or any other dynamic functionality here
+    addHeaderFunctionality();
+  });
 
 function addHeaderFunctionality() {
   // Add active class to the nav links
