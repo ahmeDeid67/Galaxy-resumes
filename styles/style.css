@@ -577,17 +577,36 @@ input[type="checkbox"]:checked::after {
 
 .other-services .services .service {
   text-align: center;
+  padding: 2rem 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.other-services .services .service:hover {
+  transform: scale(1.1);
 }
 
 .other-services .services .service i {
   font-size: 50px;
-  color: #bbb;
+  color: #cd5532;
   margin-bottom: 1.5rem;
 }
 
 .other-services .services .service h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.other-services .services .service .price {
   color: #525252;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.other-services .services .service .price p > span {
+  color: #cd5532;
 }
 
 /* CONTACT US PAGE */
